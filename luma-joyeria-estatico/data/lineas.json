@@ -1,0 +1,128 @@
+{
+  "lineas": {
+    "contemporanea": {
+      "nombre": "Línea Contemporánea",
+      "descripcion": "Acero dorado y plateado combinado con piedras naturales energéticas y perlas seleccionadas. Diseños modernos y versátiles concebidos para el uso diario con intención y estilo.",
+      "collares": [
+        {
+          "id": "collar-doble-nocturna-dore",
+          "nombre": "Collar Doble Nocturna Doré",
+          "descripcionCorta": "Cristales de Murano y Acero",
+          "precio": 30.00,
+          "imagen": "images/imagenesComtemporaneas/collar1Comtemporanea.png",
+          "imagenHover": "images/imagenesComtemporaneas/collar1Comtemporanea.png"
+        },
+        {
+          "id": "collar-rio-bonito-corazon",
+          "nombre": "Collar Río Bonito Corazón",
+          "descripcionCorta": "Piedras de río pulidas",
+          "precio": 40.00,
+          "imagen": "images/imagenesComtemporaneas/collar2Comtemporanea.png",
+          "imagenHover": "images/imagenesComtemporaneas/collar2Comtemporanea.png"
+        },
+        {
+          "id": "collar-reyna",
+          "nombre": "Collar Reyna",
+          "descripcionCorta": "Piedras de Nácar auténticas",
+          "precio": 45.00,
+          "imagen": "images/imagenesComtemporaneas/collar3Comtemporanea.png",
+          "imagenHover": "images/imagenesComtemporaneas/collar3Comtemporanea.png"
+        },
+        {
+          "id": "collar-rio-de-luz",
+          "nombre": "Collar Río de Luz",
+          "descripcionCorta": "Perlas del río y acero plateado",
+          "precio": 40.00,
+          "imagen": "images/imagenesComtemporaneas/collar4Comtemporanea.png",
+          "imagenHover": "images/imagenesComtemporaneas/collar4Comtemporanea.png"
+        }
+      ],
+      "pulseras": [
+        {
+          "id": "pulsera-doble-corazon-real",
+          "nombre": "Pulsera \"Doble Corazón Real\"",
+          "descripcionCorta": "Jade y Piedras de Río",
+          "precio": 25.00,
+          "imagen": "images/imagenesComtemporaneas/pulsera1Comtemporanea.jpeg",
+          "imagenHover": "images/imagenesComtemporaneas/pulsera1Comtemporanea.jpeg"
+        },
+        {
+          "id": "pulsera-doble-rio-de-luz",
+          "nombre": "Pulsera Doble \"Río de Luz\"",
+          "descripcionCorta": "Perlas de río y acero",
+          "precio": 25.00,
+          "imagen": "images/imagenesComtemporaneas/pulsera2Comtemporanea.jpeg",
+          "imagenHover": "images/imagenesComtemporaneas/pulsera2Comtemporanea.jpeg"
+        },
+        {
+          "id": "collar-doble-luna",
+          "nombre": "Collar Doble \"Luna\"",
+          "descripcionCorta": "Ónix Negra y Cuarzo Blanco",
+          "precio": 25.00,
+          "imagen": "images/imagenesComtemporaneas/pulsera3Comtemporanea.jpeg",
+          "imagenHover": "images/imagenesComtemporaneas/pulsera3Comtemporanea.jpeg"
+        },
+        {
+          "id": "pulsera-blanca-elegancia",
+          "nombre": "Pulsera \"Blanca\"",
+          "descripcionCorta": "Cristal Negro y Ojo Turco",
+          "precio": 25.00,
+          "imagen": "images/imagenesComtemporaneas/pulsera4Comtemporanea.jpeg",
+          "imagenHover": "images/imagenesComtemporaneas/pulsera4Comtemporanea.jpeg"
+        }
+      ],
+      "aretes": [
+        {
+          "id": "aretes-brisa-serena",
+          "nombre": "Aretes \"Brisa Serena\"",
+          "descripcionCorta": "Piedras de río y Jade",
+          "precio": 40.00,
+          "imagen": "images/imagenesComtemporaneas/arete1Comtemporaneo.jpeg",
+          "imagenHover": "images/imagenesComtemporaneas/arete1Comtemporaneo.jpeg"
+        },
+        {
+          "id": "aretes-cascada-de-perlas",
+          "nombre": "Aretes \"Cascada de Perlas\"",
+          "descripcionCorta": "Perlas del río y Jade",
+          "precio": 40.00,
+          "imagen": "images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg",
+          "imagenHover": "images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg"
+        }
+      ]
+    },
+    "cultural": {
+      "nombre": "Línea Cultural",
+      "descripcion": "Diseños inspirados en simbología ancestral y legado artesanal. Piezas únicas con identidad, historia y un profundo respeto por nuestras raíces tradicionales.",
+      "collares": [
+        {
+          "id": "collar-ancestral",
+          "nombre": "Collar Ancestral",
+          "descripcionCorta": "Oro, turquesa y jade",
+          "precio": 125.00,
+          "imagen": "images/productos/collar-anc-1.jpg",
+          "imagenHover": "images/productos/collar-anc-2.jpg"
+        }
+      ],
+      "pulseras": [
+        {
+          "id": "pulsera-tradicion",
+          "nombre": "Pulsera Tradición",
+          "descripcionCorta": "Plata y piedras locales",
+          "precio": 95.00,
+          "imagen": "images/productos/pulsera-trad-1.jpg",
+          "imagenHover": "images/productos/pulsera-trad-2.jpg"
+        }
+      ],
+      "aretes": [
+        {
+          "id": "arete-raices",
+          "nombre": "Arete Raíces",
+          "descripcionCorta": "Combinación de piedras",
+          "precio": 75.00,
+          "imagen": "images/productos/arete-rai-1.jpg",
+          "imagenHover": "images/productos/arete-rai-2.jpg"
+        }
+      ]
+    }
+  }
+}

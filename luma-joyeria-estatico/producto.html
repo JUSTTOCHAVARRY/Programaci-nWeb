@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="es" class="bg-cream">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FAF8F5">
+  <title id="page-title">Producto | LUMA Joyería</title>
+  <meta name="description" content="Descubre nuestras joyas artesanales" id="page-description">
+  <link rel="icon" href="images/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="images/apple-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="antialiased" data-page="lineas">
+
+  <header class="fixed top-0 left-0 right-0 bg-cream border-b border-gold/30 z-50">
+    <div class="max-w-[95%] mx-auto px-4 py-4 flex items-center justify-between">
+
+      <!-- ================= VISTA MÓVIL (BOTÓN MENÚ IZQUIERDO) ================= -->
+      <button id="menu-toggle-btn" class="md:hidden text-black hover:text-gold transition-colors z-50 p-1" aria-label="Abrir menú">
+        <svg id="icon-menu" class="w-6 h-6 stroke-[1.5]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16"/><path d="M4 12h16"/><path d="M4 19h16"/></svg>
+        <svg id="icon-close" class="w-6 h-6 stroke-[1.5] hidden" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+      </button>
+
+      <!-- BLOQUE DEL LOGO -->
+      <a href="index.html" class="flex items-center transition-opacity hover:opacity-80 mx-auto md:mx-0">
+        <div class="w-[100px] md:w-[120px] h-[40px] md:h-[45px] flex items-center">
+          <img src="images/logo.png" alt="Luma Joyería" class="w-full h-full object-contain">
+        </div>
+      </a>
+
+      <!-- ================= MENÚ DE NAVEGACIÓN DESKTOP ================= -->
+      <nav class="hidden md:flex items-center gap-12">
+        <a href="index.html" data-nav="inicio" class="nav-link font-serif tracking-[0.2em] uppercase transition-all text-xs pb-1 border-b-2 font-bold text-black border-transparent hover:text-gold hover:border-gold/50">Inicio</a>
+        <a href="lineas.html" data-nav="lineas" class="nav-link font-serif tracking-[0.2em] uppercase transition-all text-xs pb-1 border-b-2 font-bold text-black border-transparent hover:text-gold hover:border-gold/50">Líneas</a>
+        <a href="nosotros.html" data-nav="nosotros" class="nav-link font-serif tracking-[0.2em] uppercase transition-all text-xs pb-1 border-b-2 font-bold text-black border-transparent hover:text-gold hover:border-gold/50">Nosotros</a>
+
+        <!-- BOTÓN DE CONTACTO EXCLUSIVO PARA DESKTOP -->
+        <a href="contacto.html" class="px-6 py-2.5 bg-transparent text-gold border-2 border-gold font-serif text-xs tracking-[0.2em] hover:bg-gold hover:text-white transition-all rounded-none uppercase text-center font-bold">
+          Contacto
+        </a>
+      </nav>
+
+      <!-- Espaciador invisible en móvil para equilibrar el botón de la izquierda -->
+      <div class="w-8 md:hidden pointer-events-none"></div>
+
+    </div>
+  </header>
+
+  <!-- ============================================================== -->
+  <!-- BARRITA DE NAVEGACIÓN LATERAL IZQUIERDA (SOLO MÓVIL) -->
+  <!-- ============================================================== -->
+  <div id="menu-overlay" class="fixed inset-0 bg-black/40 backdrop-blur-xs z-40 transition-opacity duration-300 md:hidden opacity-0 pointer-events-none"></div>
+
+  <aside id="menu-aside" class="fixed top-0 bottom-0 left-0 w-[260px] max-w-[80vw] bg-cream border-r border-gold/20 pt-24 px-6 pb-8 z-40 transition-transform duration-300 ease-out md:hidden -translate-x-full">
+    <nav class="flex flex-col gap-6">
+      <a href="index.html" data-nav="inicio" class="nav-link-mobile font-serif tracking-[0.2em] uppercase transition-all text-xs py-2 block font-bold text-black hover:text-gold">Inicio</a>
+      <a href="lineas.html" data-nav="lineas" class="nav-link-mobile font-serif tracking-[0.2em] uppercase transition-all text-xs py-2 block font-bold text-black hover:text-gold">Líneas</a>
+      <a href="nosotros.html" data-nav="nosotros" class="nav-link-mobile font-serif tracking-[0.2em] uppercase transition-all text-xs py-2 block font-bold text-black hover:text-gold">Nosotros</a>
+
+      <!-- BOTÓN DE CONTACTO MANTENIENDO EL FORMATO DE BOTÓN -->
+      <div class="pt-4">
+        <a href="contacto.html" class="w-full block px-6 py-3 bg-transparent text-gold border-2 border-gold font-serif text-xs tracking-[0.2em] hover:bg-gold hover:text-white transition-all rounded-none uppercase text-center font-bold">
+          Contacto
+        </a>
+      </div>
+    </nav>
+  </aside>
+
+  <main class="min-h-screen pt-24">
+
+    <!-- ESTADO: PRODUCTO NO ENCONTRADO (oculto por defecto) -->
+    <div id="producto-no-encontrado" class="bg-cream min-h-screen flex items-center justify-center hidden">
+      <div class="text-center">
+        <h1 class="text-3xl font-serif font-bold text-black mb-4">Producto No Encontrado</h1>
+        <p class="text-black/60 mb-8">Lo sentimos, este producto no está disponible.</p>
+        <a href="lineas.html" class="inline-block px-8 py-4 bg-gold text-black font-semibold tracking-wider uppercase border-2 border-gold hover:bg-transparent hover:text-gold transition-all rounded-none">
+          Volver a Colecciones
+        </a>
+      </div>
+    </div>
+
+    <!-- ESTADO: DETALLE DE PRODUCTO -->
+    <div id="producto-detalle" class="bg-cream min-h-screen py-6 md:py-16 hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8">
+
+        <!-- BREADCRUMB -->
+        <div class="mb-6 md:mb-12 flex items-center gap-2 text-xs md:text-sm">
+          <a href="lineas.html" class="text-black/60 hover:text-gold transition-colors">Colecciones</a>
+          <span class="text-black/40">/</span>
+          <span id="breadcrumb-nombre" class="text-gold font-medium truncate"></span>
+        </div>
+
+        <!-- LAYOUT: DOS COLUMNAS -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16">
+          <!-- COLUMNA IZQUIERDA: GALERÍA DE IMÁGENES -->
+          <div class="space-y-4 md:space-y-6">
+            <!-- IMAGEN PRINCIPAL CON ZOOM -->
+            <div id="imagen-container" class="relative w-full aspect-square bg-black border-2 border-gold rounded-none overflow-hidden group cursor-zoom-in flex items-center justify-center">
+              <img id="imagen-principal" src="" alt="" class="w-full h-full object-contain transition-transform duration-300">
+
+              <!-- ÍCONO DE LUPA FLOTANTE -->
+              <div class="absolute top-4 right-4 bg-black/70 p-3 rounded-none border border-gold/30 opacity-0 group-hover:md:opacity-100 transition-opacity duration-300 hidden md:block">
+                <svg class="w-5 h-5 text-gold" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21 21-4.34-4.34"/><circle cx="11" cy="11" r="8"/></svg>
+              </div>
+            </div>
+
+            <!-- MINIATURAS -->
+            <div id="miniaturas-container" class="flex gap-3 overflow-x-auto pb-2 md:pb-0 scrollbar-none snap-x"></div>
+          </div>
+
+          <!-- COLUMNA DERECHA: INFORMACIÓN Y COMPRA -->
+          <div class="space-y-6 md:space-y-8 flex flex-col justify-start">
+            <!-- LÍNEA/CATEGORÍA -->
+            <div>
+              <p id="producto-linea" class="text-[10px] md:text-xs tracking-[0.3em] text-gold font-semibold uppercase mb-1 md:mb-2"></p>
+            </div>
+
+            <!-- NOMBRE DEL PRODUCTO -->
+            <div>
+              <h1 id="producto-nombre" class="text-3xl md:text-5xl font-serif font-bold text-black mb-3 md:mb-6 tracking-wide leading-tight"></h1>
+            </div>
+
+            <!-- PRECIO -->
+            <div class="border-b-2 border-gold pb-4 md:pb-6">
+              <p id="producto-precio" class="text-3xl md:text-4xl font-serif font-bold text-gold tracking-wide"></p>
+            </div>
+
+            <!-- DESCRIPCIÓN -->
+            <div class="space-y-4">
+              <p id="producto-descripcion" class="text-base md:text-lg text-black/80 font-light leading-relaxed"></p>
+
+              <!-- MATERIALES -->
+              <div id="materiales-wrapper" class="pt-2 md:pt-4">
+                <h3 class="text-xs md:text-sm font-semibold text-black mb-3 uppercase tracking-wider">Materiales</h3>
+                <div id="materiales-container" class="flex flex-wrap gap-2"></div>
+              </div>
+
+              <!-- NOTA ARTESANAL -->
+              <div class="pt-4 md:pt-6 border-t border-gold/20">
+                <p class="text-xs text-black/60 font-light italic">
+                  Pieza artesanal creada en Lambayeque, Perú. Cada joya es única y cuenta con intención.
+                </p>
+              </div>
+            </div>
+
+            <!-- SELECTOR DE CANTIDAD -->
+            <div class="space-y-3">
+              <label class="text-xs md:text-sm font-semibold text-black uppercase tracking-wider block">Cantidad</label>
+              <div class="flex items-center gap-4 border-2 border-black rounded-none p-1.5 md:p-2 w-full sm:w-fit justify-between sm:justify-start">
+                <button id="btn-restar" class="p-2 hover:bg-gold/20 transition-colors" aria-label="Disminuir cantidad">
+                  <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>
+                </button>
+                <span id="cantidad-valor" class="font-serif font-bold text-lg text-black w-8 text-center">1</span>
+                <button id="btn-sumar" class="p-2 hover:bg-gold/20 transition-colors" aria-label="Aumentar cantidad">
+                  <svg class="w-4 h-4 text-black" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- BOTÓN DE COMPRA ÚNICO -->
+            <div class="space-y-3 pt-2 md:pt-4">
+              <button id="btn-comprar-whatsapp" class="w-full bg-black text-cream py-3.5 md:py-4 text-sm md:text-base font-semibold tracking-wider uppercase border-2 border-black rounded-none hover:bg-gold hover:text-black hover:border-gold transition-all duration-300 dynamic-glow">
+                Comprar por WhatsApp
+              </button>
+            </div>
+
+            <!-- VOLVER A COLECCIONES -->
+            <div class="pt-2 text-center sm:text-left">
+              <a href="lineas.html" class="text-gold hover:text-black underline underline-offset-4 text-xs md:text-sm font-medium transition-colors">
+                Volver a Colecciones
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-black text-cream border-t border-gold/30 w-full">
+    <div class="mx-auto max-w-[95%] px-6 pt-16 pb-0 md:px-12">
+
+      <!-- DESKTOP: 4 columnas distribuidas a lo ancho -->
+      <div class="hidden grid-cols-4 gap-12 md:grid items-start text-left">
+
+        <!-- COLUMNA 1: Logo grande + Descripción abajo -->
+        <div class="flex flex-col items-start gap-4">
+          <div class="relative block w-36 h-16 shrink-0 brightness-0 invert">
+            <img src="images/logo.png" alt="Luma Joyería Logo" class="w-full h-full object-contain object-left">
+          </div>
+          <p class="text-sm font-bold leading-relaxed text-gold italic">
+            Accesorios artesanales hechos a mano en Chiclayo, Perú. Piezas únicas con alma, historia y el poder de las piedras naturales.
+          </p>
+        </div>
+
+        <!-- COLUMNA 2: Navegación -->
+        <div>
+          <h4 class="mb-4 font-serif text-xs font-bold tracking-[0.2em] text-gold uppercase border-b border-gold/10 pb-2 text-left">Navegación</h4>
+          <ul class="space-y-2 font-bold">
+            <li><a href="index.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Inicio</a></li>
+            <li><a href="lineas.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Líneas</a></li>
+            <li><a href="nosotros.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Nosotros</a></li>
+            <li><a href="contacto.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Contacto</a></li>
+          </ul>
+        </div>
+
+        <!-- COLUMNA 3: Síguenos -->
+        <div>
+          <h4 class="mb-4 font-serif text-xs font-bold tracking-[0.2em] text-gold uppercase border-b border-gold/10 pb-2 text-left">Síguenos</h4>
+          <div class="flex flex-col gap-3 pt-1 font-bold">
+            <a href="https://instagram.com/lumajewelry.g" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs font-serif tracking-wider text-cream hover:text-gold transition-colors">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.646.069 4.85 0 3.204-.012 3.584-.07 4.85-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/></svg>
+              <span>@lumajewelry.g</span>
+            </a>
+            <a href="https://tiktok.com/@Luma_jewelry" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs font-serif tracking-wider text-cream hover:text-gold transition-colors">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.68v12.7a2.85 2.85 0 1 1-5.92-2.86 2.89 2.89 0 0 1 2.31 1.39V9.4a6.53 6.53 0 0 0-6.59 6.5 6.59 6.59 0 1 0 11.91-5.33z"/></svg>
+              <span>@Luma_jewelry</span>
+            </a>
+            <a href="https://facebook.com/Luma Joyeria" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs font-serif tracking-wider text-cream hover:text-gold transition-colors">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              <span>Luma Joyeria</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- COLUMNA 4: Contáctanos + Horario e Ubicación -->
+        <div>
+          <h4 class="mb-4 font-serif text-xs font-bold tracking-[0.2em] text-gold uppercase border-b border-gold/10 pb-2 text-left">Contáctanos</h4>
+          <div class="space-y-3 font-bold text-xs font-serif tracking-wider">
+            <a href="https://wa.me/51924505903" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 uppercase text-cream hover:text-gold transition-colors block">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 16.985 15H19a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 3 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2.015a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+              <span>+51 924 505 903</span>
+            </a>
+            <p class="normal-case text-cream pl-6 cursor-default">Lun – Sáb · 9:00 – 20:00</p>
+            <p class="normal-case text-cream pl-6 cursor-default">Chiclayo, Perú</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MOBILE: Adaptado con textos en negrita -->
+      <div class="flex flex-col gap-10 md:hidden text-left">
+        <!-- Nivel 1: Marca -->
+        <div class="flex flex-col gap-4 border-b border-gold/10 pb-6">
+          <div class="relative block w-36 h-16 shrink-0 brightness-0 invert">
+            <img src="images/logo.png" alt="Luma Joyería Logo" class="w-full h-full object-contain">
+          </div>
+          <p class="text-xs font-bold leading-relaxed text-gold italic">Accesorios artesanales hechos a mano en Chiclayo, Perú. Piezas únicas con alma, historia y el poder de las piedras naturales.</p>
+        </div>
+
+        <!-- Nivel 2: Dos columnas simétricas -->
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <h4 class="mb-4 font-serif text-xs font-bold tracking-[0.2em] text-gold uppercase border-b border-gold/10 pb-2 text-left">Navegación</h4>
+            <ul class="space-y-2 font-bold">
+              <li><a href="index.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Inicio</a></li>
+              <li><a href="lineas.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Líneas</a></li>
+              <li><a href="nosotros.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Nosotros</a></li>
+              <li><a href="contacto.html" class="text-xs font-serif tracking-wider uppercase text-cream hover:text-gold transition-colors block">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="mb-4 font-serif text-xs font-bold tracking-[0.2em] text-gold uppercase border-b border-gold/10 pb-2 text-left">Síguenos</h4>
+            <div class="flex flex-col gap-3 pt-1 font-bold">
+              <a href="https://instagram.com/lumajewelry.g" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs font-serif tracking-wider text-cream hover:text-gold transition-colors">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.266.069 1.646.069 4.85 0 3.204-.012 3.584-.07 4.85-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1 1 12.324 0 6.162 6.162 0 0 1-12.324 0zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm4.965-10.322a1.44 1.44 0 1 1 2.881.001 1.44 1.44 0 0 1-2.881-.001z"/></svg>
+                <span>@lumajewelry.g</span>
+              </a>
+              <a href="https://tiktok.com/@Luma_jewelry" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs font-serif tracking-wider text-cream hover:text-gold transition-colors">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.68v12.7a2.85 2.85 0 1 1-5.92-2.86 2.89 2.89 0 0 1 2.31 1.39V9.4a6.53 6.53 0 0 0-6.59 6.5 6.59 6.59 0 1 0 11.91-5.33z"/></svg>
+                <span>@Luma_jewelry</span>
+              </a>
+              <a href="https://facebook.com/Luma Joyeria" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 text-xs font-serif tracking-wider text-cream hover:text-gold transition-colors">
+                <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                <span>Luma Joyeria</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Nivel 3 Móvil: Contáctanos -->
+        <div class="border-t border-gold/10 pt-6">
+          <h4 class="mb-4 font-serif text-xs font-bold tracking-[0.2em] text-gold uppercase border-b border-gold/10 pb-2 text-left">Contáctanos</h4>
+          <div class="space-y-3 font-bold text-xs font-serif tracking-wider">
+            <a href="https://wa.me/51924505903" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 uppercase text-cream hover:text-gold transition-colors block">
+              <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 16.985 15H19a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 3 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v2.015a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"/></svg>
+              <span>+51 924 505 903</span>
+            </a>
+            <p class="normal-case text-cream pl-6">Lun – Sáb · 9:00 – 20:00</p>
+            <p class="normal-case text-cream pl-6">Lambayeque, Perú</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Copyright -->
+      <div class="mt-8 border-t border-gold/10 pt-4 pb-4 text-center text-xs tracking-widest font-serif font-normal text-cream/50">
+        © <span id="copyright-year"></span> LUMA Joyería. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <div class="fixed bottom-8 right-8 z-40 flex items-center justify-center">
+    <span class="absolute inline-flex h-16 w-16 animate-ping rounded-full bg-gold/40 opacity-75 duration-1000"></span>
+    <span class="absolute inline-flex h-20 w-20 animate-pulse rounded-full bg-gold/10 duration-700"></span>
+    <a
+      href="https://wa.me/51924505903"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="relative w-16 h-16 bg-gold text-black rounded-full flex items-center justify-center transition-all duration-500 hover:bg-black hover:text-gold hover:scale-110 hover:shadow-[0_0_30px_rgba(212,175,55,0.7)] shadow-xl group overflow-hidden"
+      aria-label="Contactar por WhatsApp"
+    >
+      <span class="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:animate-[shimmer_1.5s_infinite]"></span>
+      <div class="transition-transform duration-500 group-hover:rotate-[360deg] scale-110 flex items-center justify-center">
+        <svg class="w-9 h-9 fill-current transition-colors duration-500 text-black group-hover:text-gold" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L0 24l6.335-1.662c1.746.953 3.71 1.454 5.709 1.455h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+        </svg>
+      </div>
+    </a>
+  </div>
+
+  <script src="js/common.js"></script>
+  <script src="js/producto.js"></script>
+</body>
+</html>

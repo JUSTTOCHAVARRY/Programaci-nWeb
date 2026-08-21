@@ -1,0 +1,28 @@
+{
+  "testimonios": [
+    {
+      "estrellas": 5,
+      "texto": "Mi pulsera inicial es preciosa. Se nota el cuidado artesanal en cada detalle. La llevo todos los días.",
+      "autor": "María L.",
+      "ciudad": "Lima"
+    },
+    {
+      "estrellas": 5,
+      "texto": "El collar Jade & Río que pedí quedó espectacular. La inicial personalizada lo hace completamente único.",
+      "autor": "Carmen V.",
+      "ciudad": "Trujillo"
+    },
+    {
+      "estrellas": 5,
+      "texto": "La pulsera Murano fue el regalo perfecto para mi mamá. Lloró de la emoción al recibirla.",
+      "autor": "Sofía R.",
+      "ciudad": "Chiclayo"
+    },
+    {
+      "estrellas": 5,
+      "texto": "Calidad increíble y cada pieza tiene su propio significado. Luma sabe transformar lo simple en algo muy especial.",
+      "autor": "Valeria M.",
+      "ciudad": "Arequipa"
+    }
+  ]
+}

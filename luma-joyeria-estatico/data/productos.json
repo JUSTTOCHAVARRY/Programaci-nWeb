@@ -1,0 +1,110 @@
+{
+  "collar-doble-nocturna-dore": {
+    "id": "collar-doble-nocturna-dore",
+    "name": "Collar Doble Nocturna Doré",
+    "line": "Línea Contemporánea",
+    "price": 30,
+    "description": "Elegancia que brilla en cada detalle. Este accesorio presenta un diseño de estructura de collar doble con caída fluida. Incluye broche y cadena de extensión para regular el largo ideal, uniendo el negro nocturno intenso y el oro brillante en armonía.",
+    "materials": ["Cristales de Murano seleccionados", "Acero Dorado (resistente, duradero e hipoalergénico)", "Cadena de extensión"],
+    "images": ["images/imagenesComtemporaneas/collar1Comtemporanea.png"]
+  },
+  "collar-rio-bonito-corazon": {
+    "id": "collar-rio-bonito-corazon",
+    "name": "Collar Río Bonito Corazón",
+    "line": "Línea Contemporánea",
+    "price": 40,
+    "description": "Belleza natural que fluye desde el corazón. Confeccionado con auténticas piedras del río pulidas de forma natural por el agua. Destaca por incluir un hermoso dije de corazón central, símbolo de amor incondicional, diseñado para atraer armonía, equilibrio y energía positiva a tu día a día.",
+    "materials": ["Auténticas piedras del río pulidas", "Dije de corazón central", "Acabados dorados de alta calidad"],
+    "images": ["images/imagenesComtemporaneas/collar2Comtemporanea.png"]
+  },
+  "collar-reyna": {
+    "id": "collar-reyna",
+    "name": "Collar Reyna",
+    "line": "Línea Contemporánea",
+    "price": 45,
+    "description": "Elegancia natural, amor que brilla. Una pieza que resalta tu belleza natural gracias a las propiedades de sus piedras de nácar auténticas, ideales para armonizar las emociones y atraer energía positiva. Luce un corazón dorado pulido que simboliza el amor propio y la protección.",
+    "materials": ["Piedras de Nácar auténticas", "Dije de corazón dorado pulido", "Inserciones doradas de alta calidad"],
+    "images": ["images/imagenesComtemporaneas/collar3Comtemporanea.png"]
+  },
+  "collar-rio-de-luz": {
+    "id": "collar-rio-de-luz",
+    "name": "Collar Río de Luz",
+    "line": "Línea Contemporánea",
+    "price": 40,
+    "description": "Diseño que ilumina con belleza natural. Este collar equilibra la pureza de sus perlas con eslabones modernos. Simboliza pureza, equilibrio, serenidad y una profunda conexión con la naturaleza. Cuenta con personalización para llevarlo de una forma totalmente única.",
+    "materials": ["Auténticas perlas del río seleccionadas", "Eslabones de acero plateado", "Dije de inicial personalizada"],
+    "images": ["images/imagenesComtemporaneas/collar4Comtemporanea.png"]
+  },
+  "collar-inicial-perlas": {
+    "id": "collar-inicial-perlas",
+    "name": "Collar Inicial de Perlas (Minimalista)",
+    "line": "Línea Contemporánea",
+    "price": 45,
+    "description": "Lleva contigo tu essence, tu historia, tu letra. Un diseño sofisticado de una sola capa fluida diseñado para mantener su brillo con el paso del tiempo. Incluye un dije de inicial a tu elección que representa fielmente tu identidad.",
+    "materials": ["Auténticas perlas de río seleccionadas", "Dije de inicial de elección", "Acero inoxidable (broche y cadena extensora)"],
+    "images": ["images/imagenesComtemporaneas/collar5Comtemporanea.png"]
+  },
+  "pulsera-doble-corazon-real": {
+    "id": "pulsera-doble-corazon-real",
+    "name": "Pulsera \"Doble Corazón Real\": Jade & Río",
+    "line": "Línea Contemporánea",
+    "price": 25,
+    "description": "¡Llévala. Siéntela. Brilla! Un diseño exclusivo de doble capa para tu muñeca que combina la elegancia atemporal de las perlas con el misticismo y la frescura de las piedras naturales. El amuleto perfecto que aporta un toque único, sofisticado y lleno de color a tu estilo diario. Atrae equilibrio, prosperidad, armonía y buenas energías a quien la lleva, protegiendo tu camino día a día.",
+    "materials": ["Piedras de río pulidas", "Cuentas de Ágata Jade natural", "Dije de corazón", "Inicial personalizada", "Detalles dorados de alta calidad"],
+    "images": ["images/imagenesComtemporaneas/pulsera1Comtemporanea.jpeg"]
+  },
+  "pulsera-doble-rio-de-luz": {
+    "id": "pulsera-doble-rio-de-luz",
+    "name": "Pulsera Doble \"Río de Luz\": Inicial C",
+    "line": "Línea Contemporánea",
+    "price": 25,
+    "description": "¡Llévala. Siéntela. Brilla! Un diseño urbano y moderno de doble capa que equilibra perfectamente la delicadeza de la naturaleza con las tendencias actuales. Ideal para llevar tu identidad con orgullo o sorprender a alguien especial con un detalle inolvidable. Las perlas de río simbolizan pureza, equilibrio y una profunda conexión con la naturaleza, aportando serenidad y armonía a tu rutina.",
+    "materials": ["Perlas de río auténticas seleccionadas", "Cadena de eslabones tipo paperclip (clip) en acero plateado", "Dije central con inicial resaltada en esmalte negro"],
+    "images": ["images/imagenesComtemporaneas/pulsera2Comtemporanea.jpeg"]
+  },
+  "collar-doble-luna": {
+    "id": "collar-doble-luna",
+    "name": "Collar Doble \"Luna\": Fuerza y Luz",
+    "line": "Línea Contemporánea",
+    "price": 25,
+    "description": "¡Llévalo. Siéntelo. Brilla! Un diseño de estilo doble y energía completa que equilibra la elegancia del oro con el poder de las piedras naturales. Creado especialmente para quienes buscan un accesorio con carácter, protección y un significado espiritual profundo. El Ónix Negra absorbe las energías negativas y brinda estabilidad emocional, mientras que el Cuarzo Blanco aporta claridad mental y favorece la paz interior.",
+    "materials": ["Cuentas esféricas de Ónix Negra legítima", "Cuarzo Blanco natural", "Baño dorado de alta calidad", "Medalla grabada \"LUNA\"", "Dije de corazón oscuro e inicial dorada"],
+    "images": ["images/imagenesComtemporaneas/pulsera3Comtemporanea.jpeg"]
+  },
+  "pulsera-blanca-elegancia": {
+    "id": "pulsera-blanca-elegancia",
+    "name": "Pulsera \"Blanca\": Elegancia que te Cuida",
+    "line": "Línea Contemporánea",
+    "price": 25,
+    "description": "¡Llévala. Siéntela. Brilla! Un diseño sutil y poderoso que fusiona la protección ancestral con la sofisticación moderna. Creada como un amuleto diario para quienes buscan seguridad, estilo y un escudo de bienestar en su rutina. El Ojo Turco Blanco simboliza protección, paz y claridad, mientras que el Cristal Negro aporta fuerza, seguridad y un profundo equilibrio emocional.",
+    "materials": ["Cuentas facetadas de Cristal Negro", "Dije central de Ojo Turco Blanco", "Cordón textil de alta resistencia", "Sistema de nudo corredizo ajustable", "Detalles metálicos dorados"],
+    "images": ["images/imagenesComtemporaneas/pulsera4Comtemporanea.jpeg"]
+  },
+  "pulsera-doble-lu-ma": {
+    "id": "pulsera-doble-lu-ma",
+    "name": "Pulsera Doble \"Lu Ma\": Inicial F & Trébol",
+    "line": "Línea Contemporánea",
+    "price": 25,
+    "description": "¡Llévala. Siéntela. Brilla! Lleva tu esencia contigo, cada día, a cada lugar. Un diseño exclusivo de doble capa que fusiona la elegancia clásica de las perlas con una cadena moderna de eslabones, creando el equilibrio perfecto entre sofisticación, identidad y un toque de buena fortuna. Las perlas de río simbolizan pureza, amor y armonía, aportando calma emocional.",
+    "materials": ["Perlas de río auténticas seleccionadas", "Cadenas y detalles en acero inoxidable de alta resistencia", "Dije de trébol de la suerte", "Dije con inicial personalizable"],
+    "images": ["images/imagenesComtemporaneas/pulsera5Comtemporanea.jpeg"]
+  },
+  "aretes-brisa-serena": {
+    "id": "aretes-brisa-serena",
+    "name": "Aretes \"Brisa Serena\": Conexión y Calma Natural",
+    "line": "Línea Contemporánea",
+    "price": 40,
+    "description": "¡Llévalos. Siéntelos. Brilla! Un diseño colgante, alargado y estilizado que combina la frescura mística de los minerales con la elegancia atemporal de las perlas. Su caída delicada aporta movimiento, luz a tu rostro y un toque de sofisticación orgánica perfecto para cualquier ocasión. Una perfecta sinergia natural que equilibra las propiedades de la piedra jade (prosperidad y armonía) con la serenidad y pureza de las piedras del río.",
+    "materials": ["Piedras del río barrocas", "Cuentas circulares de Piedra Jade", "Herrajes en acero dorado de alta resistencia", "Broche de gancho seguro (tipo catalán/ballestilla)"],
+    "images": ["images/imagenesComtemporaneas/arete1Comtemporaneo.jpeg"]
+  },
+  "aretes-cascada-de-perlas": {
+    "id": "aretes-cascada-de-perlas",
+    "name": "Aretes \"Cascada de Perlas\": Riqueza y Tradición Natural",
+    "line": "Línea Contemporánea",
+    "price": 40,
+    "description": "¡Llévalos. Siéntelos. Brilla! Una pieza de alta bisutería inspirada con orgullo en la riqueza cultural y natural de Chiclayo que rinde homenaje a nuestras raíces. Con un diseño colgante que simula una delicada caída de agua, estos aretes fusionan la frescura de la piedra jade con el encanto natural de las perlas de río, logrando un movimiento único que ilumina el rostro con pura sofisticación.",
+    "materials": ["Perlas del río seleccionadas", "Cuentas esféricas de Piedra Jade", "Base con cadenas en acero dorado", "Argolla de colgar texturizada"],
+    "images": ["images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg"]
+  }
+}
