@@ -127,6 +127,7 @@
     "materials": ["Perlas del río seleccionadas", "Cuentas esféricas de Piedra Jade", "Base con cadenas en acero dorado", "Argolla de colgar texturizada"],
     "images": ["images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg"]
   },
+
   
 "aretes-corazon-perlado": {
   "id": "aretes-corazon-perlado",
@@ -163,5 +164,16 @@
   "description": "¡Llévalos. Siéntelos. Brilla! Un diseño colgante y alargado que combina la frescura del jade natural con la elegancia atemporal de una perla gota en la base. La cadena dorada texturizada aporta un toque bohemio, ideal para uso diario o para complementar un look especial.",
   "materials": ["Jade natural facetado", "Perla gota natural", "Cadena de acero dorado texturizado", "Gancho francés"],
   "images": ["images/imagenesComtemporaneas/arete6Comtemporaneo.jpg"]
-}
+},
+
+  "arete-raices": {
+    "id": "arete-raices",
+    "name": "Aretes \"Cascada de Perlas\": Riqueza y Tradición Natural",
+    "line": "Línea Cultural",
+    "price": 40,
+    "description": "¡Llévalos. Siéntelos. Brilla! Una pieza de alta bisutería inspirada con orgullo en la riqueza cultural y natural de Chiclayo que rinde homenaje a nuestras raíces. Con un diseño colgante que simula una delicada caída de agua, estos aretes fusionan la frescura de la piedra jade con el encanto natural de las perlas de río, logrando un movimiento único que ilumina el rostro con pura sofisticación.",
+    "materials": ["Perlas del río seleccionadas", "Cuentas esféricas de Piedra Jade", "Base con cadenas en acero dorado", "Argolla de colgar texturizada"],
+    "images": ["images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg"]
+  }
+
 }

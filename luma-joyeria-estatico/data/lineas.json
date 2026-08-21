@@ -123,7 +123,10 @@
           "descripcionCorta": "Oro, turquesa y jade",
           "precio": 125.00,
           "imagen": "images/productos/collar-anc-1.jpg",
-          "imagenHover": "images/productos/collar-anc-2.jpg"
+          "imagenHover": "images/imagenesComtemporaneas/arete1Comtemporaneo.jpeg"
+        },{
+
+
         }
       ],
       "pulseras": [
@@ -142,8 +145,8 @@
           "nombre": "Arete Raíces",
           "descripcionCorta": "Combinación de piedras",
           "precio": 75.00,
-          "imagen": "images/productos/arete-rai-1.jpg",
-          "imagenHover": "images/productos/arete-rai-2.jpg"
+          "imagen": "images/imagenesComtemporaneas/arete1Comtemporaneo.jpeg",
+          "imagenHover": "images/productos/pulsera-trad-2.jpg"
         }
       ]
     }
