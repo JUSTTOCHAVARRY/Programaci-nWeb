@@ -44,6 +44,16 @@
     "materials": ["Auténticas perlas de río seleccionadas", "Dije de inicial de elección", "Acero inoxidable (broche y cadena extensora)"],
     "images": ["images/imagenesComtemporaneas/collar5Comtemporanea.png"]
   },
+  
+"collar-luna-mistica": {
+  "id": "collar-luna-mistica",
+  "name": "Collar Luna Mística",
+  "line": "Línea Contemporánea",
+  "price": 45,
+  "description": "Elegancia con carácter y contraste. Un diseño asimétrico que combina cuentas de ónix, perlas naturales y amatista con una cadena de eslabones alargados en acero dorado, rematada en un broche circular statement. Su caída final con dijes colgantes aporta movimiento y un toque boho-chic a cualquier look.",
+  "materials": ["Cuentas de Ónix Negra", "Perlas naturales", "Amatista natural", "Cadena de eslabones en acero dorado", "Broche circular tipo statement"],
+  "images": ["images/imagenesComtemporaneas/collar6Comtemporanea.jpg"]
+},
   "pulsera-doble-corazon-real": {
     "id": "pulsera-doble-corazon-real",
     "name": "Pulsera \"Doble Corazón Real\": Jade & Río",
@@ -87,8 +97,18 @@
     "price": 25,
     "description": "¡Llévala. Siéntela. Brilla! Lleva tu esencia contigo, cada día, a cada lugar. Un diseño exclusivo de doble capa que fusiona la elegancia clásica de las perlas con una cadena moderna de eslabones, creando el equilibrio perfecto entre sofisticación, identidad y un toque de buena fortuna. Las perlas de río simbolizan pureza, amor y armonía, aportando calma emocional.",
     "materials": ["Perlas de río auténticas seleccionadas", "Cadenas y detalles en acero inoxidable de alta resistencia", "Dije de trébol de la suerte", "Dije con inicial personalizable"],
-    "images": ["images/imagenesComtemporaneas/pulsera5Comtemporanea.jpeg"]
+    "images": ["images/imagenesComtemporaneas/pulsera5Comtemporanea.jpg"]
   },
+  
+"pulsera-perla-inicial": {
+  "id": "pulsera-perla-inicial",
+  "name": "Pulsera Perla Inicial: Elegancia Personal",
+  "line": "Línea Contemporánea",
+  "price": 25,
+  "description": "¡Llévala. Siéntela. Brilla! Una pieza minimalista y atemporal confeccionada con perlas naturales cuidadosamente seleccionadas, rematada con un dije de inicial en acabado dorado pulido. Perfecta para llevar tu identidad contigo con un toque de sofisticación clásica que combina con cualquier estilo.",
+  "materials": ["Perlas naturales seleccionadas", "Dije de inicial en acero dorado", "Broche de gancho seguro"],
+  "images": ["images/imagenesComtemporaneas/pulsera6Comtemporanea.jpg"]
+},
   "aretes-brisa-serena": {
     "id": "aretes-brisa-serena",
     "name": "Aretes \"Brisa Serena\": Conexión y Calma Natural",
@@ -106,5 +126,42 @@
     "description": "¡Llévalos. Siéntelos. Brilla! Una pieza de alta bisutería inspirada con orgullo en la riqueza cultural y natural de Chiclayo que rinde homenaje a nuestras raíces. Con un diseño colgante que simula una delicada caída de agua, estos aretes fusionan la frescura de la piedra jade con el encanto natural de las perlas de río, logrando un movimiento único que ilumina el rostro con pura sofisticación.",
     "materials": ["Perlas del río seleccionadas", "Cuentas esféricas de Piedra Jade", "Base con cadenas en acero dorado", "Argolla de colgar texturizada"],
     "images": ["images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg"]
-  }
+  },
+  
+"aretes-corazon-perlado": {
+  "id": "aretes-corazon-perlado",
+  "name": "Aretes Corazón Perlado: Encanto Bohemio",
+  "line": "Línea Contemporánea",
+  "price": 40,
+  "description": "¡Llévalos. Siéntelos. Brilla! Un diseño romántico y artesanal que combina delicados corazones bordados en perlas con aros de acabado dorado texturizado. Su caída armoniosa y su detalle de racimo de perlas en la parte superior aportan movimiento y un aire bohemio-elegante a cualquier look.",
+  "materials": ["Perlas naturales seleccionadas", "Aro de acero dorado texturizado", "Broche tipo palanca (lever-back)"],
+  "images": ["images/imagenesComtemporaneas/arete3Comtemporaneo.jpg"]
+},
+"aretes-aro-perlas-barrocas": {
+  "id": "aretes-aro-perlas-barrocas",
+  "name": "Aretes Aro Perlas Barrocas: Volumen y Brillo",
+  "line": "Línea Contemporánea",
+  "price": 45,
+  "description": "¡Llévalos. Siéntelos. Brilla! Un aro statement envuelto en hilo de acero dorado y cubierto de perlas barrocas de distintos tamaños, creando un efecto de textura y volumen único. Perfectos para quienes buscan un accesorio llamativo sin perder la elegancia natural de la perla.",
+  "materials": ["Perlas barrocas naturales", "Aro de acero dorado", "Broche de mariposa"],
+  "images": ["images/imagenesComtemporaneas/arete4Comtemporaneo.jpg"]
+},
+"aretes-candelabro-barroco": {
+  "id": "aretes-candelabro-barroco",
+  "name": "Aretes Candelabro Barroco: Elegancia en Cascada",
+  "line": "Línea Contemporánea",
+  "price": 50,
+  "description": "¡Llévalos. Siéntelos. Brilla! Un diseño tipo candelabro con una perla barroca protagonista en la parte superior, de la cual caen delicadas cadenas con perlas y cuentas doradas facetadas. Una pieza statement perfecta para looks de noche o momentos especiales.",
+  "materials": ["Perla barroca central", "Perlas naturales pequeñas", "Cuentas doradas facetadas", "Argolla y broche de gancho"],
+  "images": ["images/imagenesComtemporaneas/arete5Comtemporaneo.jpg"]
+},
+"aretes-jade-y-perla": {
+  "id": "aretes-jade-y-perla",
+  "name": "Aretes Jade y Perla: Naturaleza Serena",
+  "line": "Línea Contemporánea",
+  "price": 40,
+  "description": "¡Llévalos. Siéntelos. Brilla! Un diseño colgante y alargado que combina la frescura del jade natural con la elegancia atemporal de una perla gota en la base. La cadena dorada texturizada aporta un toque bohemio, ideal para uso diario o para complementar un look especial.",
+  "materials": ["Jade natural facetado", "Perla gota natural", "Cadena de acero dorado texturizado", "Gancho francés"],
+  "images": ["images/imagenesComtemporaneas/arete6Comtemporaneo.jpg"]
+}
 }

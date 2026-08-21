@@ -36,6 +36,8 @@
           "imagen": "images/imagenesComtemporaneas/collar4Comtemporanea.png",
           "imagenHover": "images/imagenesComtemporaneas/collar4Comtemporanea.png"
         }
+        
+
       ],
       "pulseras": [
         {
@@ -67,10 +69,13 @@
           "nombre": "Pulsera \"Blanca\"",
           "descripcionCorta": "Cristal Negro y Ojo Turco",
           "precio": 25.00,
-          "imagen": "images/imagenesComtemporaneas/pulsera4Comtemporanea.jpeg",
-          "imagenHover": "images/imagenesComtemporaneas/pulsera4Comtemporanea.jpeg"
+          "imagen": "images/imagenesComtemporaneas/pulsera4Comtemporanea.jpg",
+          "imagenHover": "images/imagenesComtemporaneas/pulsera4Comtemporanea.jpg"
         }
+        
+
       ],
+      
       "aretes": [
         {
           "id": "aretes-brisa-serena",
@@ -87,7 +92,25 @@
           "precio": 40.00,
           "imagen": "images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg",
           "imagenHover": "images/imagenesComtemporaneas/arete2Comtemporaneo.jpeg"
-        }
+        },
+        
+{
+  "id": "aretes-corazon-perlado",
+  "nombre": "Aretes Corazón Perlado",
+  "descripcionCorta": "Perlas y detalles dorados",
+  "precio": 40.00,
+  "imagen": "images/imagenesComtemporaneas/arete3Comtemporaneo.jpg",
+  "imagenHover": "images/imagenesComtemporaneas/arete3Comtemporaneo.jpg"
+},
+{
+  "id": "aretes-aro-perlas-barrocas",
+  "nombre": "Aretes Aro Perlas Barrocas",
+  "descripcionCorta": "Perlas barrocas y acero dorado",
+  "precio": 45.00,
+  "imagen": "images/imagenesComtemporaneas/arete4Comtemporaneo.jpg",
+  "imagenHover": "images/imagenesComtemporaneas/arete4Comtemporaneo.jpg"
+}
+
       ]
     },
     "cultural": {
